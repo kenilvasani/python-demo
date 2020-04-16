@@ -13,7 +13,7 @@
 ## Setup
 
 * Clone the repo
-* Install dependencies `pip3 install -r requirements.txt`
+* Install dependencies `pip install -r requirements.txt`
 * Export the environment variables for the Username and Access Key of your BrowserStack account
 * Start the Local server from the demo folder in a new terminal using `python -m http.server 8000`
 
