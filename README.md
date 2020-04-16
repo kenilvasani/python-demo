@@ -15,20 +15,21 @@
 * Clone the repo
 * Install dependencies `pip3 install -r requirements.txt`
 * Export the environment variables for the Username and Access Key of your BrowserStack account
+* Start the Local server from the demo folder in a new terminal using `python -m http.server 8000`
 
   ```
   export BROWSERSTACK_USERNAME=<browserstack-username> &&
   export BROWSERSTACK_ACCESS_KEY=<browserstack-access-key>
   ```
 ## Running your tests
-* To run a single test, run `python3 single.py`
-* To run local tests, run `python3 local.py`
-* To run parallel tests, run `python3 parallel.py`
-* To run Appium tests for IOS, run `python3 ios-appium.py`
-* To run Appium tests for Android, run `python3 android-appium.py`
-* To run Espresso tests,run `python3 espresso.py`
-* To run XcuiTest tests,run `python3 xcuitest.py`
-* To run Earlgrey tests,run `python3 earlgrey.py`
+* To run a single test, run `python single.py`
+* To run local tests, run `python local.py`
+* To run parallel tests, run `python parallel.py`
+* To run Appium tests for IOS, run `python ios-appium.py`
+* To run Appium tests for Android, run `python android-appium.py`
+* To run Espresso tests,run `python espresso.py`
+* To run XcuiTest tests,run `python xcuitest.py`
+* To run Earlgrey tests,run `python earlgrey.py`
 
 ## Notes
 * You can view your test results on the [BrowserStack Automate dashboard](https://www.browserstack.com/automate)
@@ -39,4 +40,3 @@
 * [Customizing your tests on BrowserStack](https://www.browserstack.com/automate/capabilities)
 * [Browsers & mobile devices for selenium testing on BrowserStack](https://www.browserstack.com/list-of-browsers-and-platforms?product=automate)
 * [Using REST API to access information about your tests via the command-line interface](https://www.browserstack.com/automate/rest-api)
-
