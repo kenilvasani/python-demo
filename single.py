@@ -6,7 +6,7 @@ import os,time
 BROWSERSTACK_USERNAME = os.environ['BROWSERSTACK_USERNAME']
 BROWSERSTACK_ACCESS_KEY = os.environ['BROWSERSTACK_ACCESS_KEY']
 browserstack_local = os.environ["BROWSERSTACK_LOCAL"]
-browserstack_local_identifier = os.environ"BROWSERSTACK_LOCAL_IDENTIFIER"]
+browserstack_local_identifier = os.environ["BROWSERSTACK_LOCAL_IDENTIFIER"]
 
 desired_cap = {
 'browser': 'Chrome',
