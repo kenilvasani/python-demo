@@ -5,6 +5,8 @@ import os,time
 
 BROWSERSTACK_USERNAME = os.environ['BROWSERSTACK_USERNAME']
 BROWSERSTACK_ACCESS_KEY = os.environ['BROWSERSTACK_ACCESS_KEY']
+browserstack_local = os.environ["BROWSERSTACK_LOCAL"]
+browserstack_local_identifier = os.environ"BROWSERSTACK_LOCAL_IDENTIFIER"]
 
 desired_cap = {
 'browser': 'Chrome',
@@ -14,7 +16,8 @@ desired_cap = {
  'resolution': '1024x768',
  'name': 'Python Sample Single Test',
  'build':'Python Demo',
- 'browserstack.local' : 'true', 
+ 'browserstack.local': browserstack_local,
+ 'browserstack.localIdentifier': browserstack_local_identifier, 
   'browserstack.debug':'true'
 }
 
