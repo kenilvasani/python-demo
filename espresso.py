@@ -21,7 +21,7 @@ for item in json_data:
 if not_uploaded == False:
 	print("App Uploading...")
 	files = {
-    'data': (None, '{"url": "https://docs.google.com/uc?export=download&id=1MuhENYHjWoPThFQgkrofmWLt-AWjDdm8","custom_id":"EspressoApp"}'),
+    'data': (None, '{"url": "https://www.browserstack.com/app-automate/sample-apps/android/Calculator.apk","custom_id":"EspressoApp"}'),
 	}
 
 	response = requests.post('https://api-cloud.browserstack.com/app-automate/upload', files=files, auth=(BROWSERSTACK_USERNAME,BROWSERSTACK_ACCESS_KEY))
@@ -44,7 +44,7 @@ for item in json_data:
 if not_uploaded == False:
 	print("Test Suite Uploading...")
 	files = {
-    'data': (None, '{"url": "https://docs.google.com/uc?export=download&id=1fSDCibYeOZLSlOA1wdgRX9uqGZLqyh8l","custom_id":"EspressoTestApp"}'),
+    'data': (None, '{"url": "https://www.browserstack.com/app-automate/sample-apps/android/CalculatorTest.apk","custom_id":"EspressoTestApp"}'),
 	}
 
 	response = requests.post('https://api-cloud.browserstack.com/app-automate/espresso/test-suite', files=files, auth=(BROWSERSTACK_USERNAME,BROWSERSTACK_ACCESS_KEY))
