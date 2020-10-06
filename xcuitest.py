@@ -21,7 +21,7 @@ for item in json_data:
 if not_uploaded == False:
 	print("App Uploading...")
 	files = {
-    'data': (None, '{"url": "https://docs.google.com/uc?export=download&id=1uDi_V38XEhnYmklrex0XeREb2j9A4flg","custom_id":"XCUIApp"}'),
+    'data': (None, '{"url": "https://www.browserstack.com/app-automate/sample-apps/ios/BrowserStack-SampleApp.ipa","custom_id":"XCUIApp"}'),
 	}
 
 	response = requests.post('https://api-cloud.browserstack.com/app-automate/upload', files=files, auth=(BROWSERSTACK_USERNAME,BROWSERSTACK_ACCESS_KEY))
@@ -45,7 +45,7 @@ for item in json_data:
 if not_uploaded == False:
 	print("Test Suite Uploading...")
 	files = {
-    'data': (None, '{"url": "https://docs.google.com/uc?export=download&id=10jArmkUCWldHeNajwRX3gMvzM5iaVdKe","custom_id":"XCUITestApp"}'),
+    'data': (None, '{"url": "https://www.browserstack.com/app-automate/sample-apps/ios/BrowserStack-SampleXCUITest.zip","custom_id":"XCUITestApp"}'),
 	}
 
 	response = requests.post('https://api-cloud.browserstack.com/app-automate/xcuitest/test-suite', files=files, auth=(BROWSERSTACK_USERNAME,BROWSERSTACK_ACCESS_KEY))
